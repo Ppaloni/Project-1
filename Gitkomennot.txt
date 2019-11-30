@@ -1,0 +1,33 @@
+luo tiedostokansio
+avaa se hiiren oikealla "Gitbash here"
+Git init kun tekee uuden projektin //initialize local git repository
+Git add tiedostonimi
+git add . //lisää kaikki projektissa muutoksen alla olleet tiedostot
+git commit
+git commit -m 'hipsukoiden sisään kommentti mitä muutoksia teit'
+git touch .ignore //luo tiedoston johon voi listata asioita, kuten esim logfiles, jotka eivät mene stagelle muutoksien yhteydessä
+git status
+git push
+git touch //luo uuden tiedoston //esimerkiksi git touch index.html
+git config --global user.name 'Perttu Paloniemi'
+git config --global user.email 'Perttu.paloniemi@edu.turkuamk.fi
+git rm --cached tiedostonimi //poistaa git stagella olevan tiedoston
+jos menee readeriin -> paina esc ja kirjota :wq
+git branch branchinname //luo branchin
+git checkout branchname //vaihtaa masterista branchiin
+git checkout master //menee takaisin master haaraan
+git merge branchname 
+kun perushomma tehty, mennään githubiin ja sieltä luodaan uusi repo
+-> private tai public
+-> luo README tai luo se VSC ja add + commit //etenkin jos kyse public filesta
+
+git remote //katsoo onko remote repoja kuten esim githubiss
+git remote add origin https://sittensegiithublinkki
+-> git remote uusiks //pitäis nyt näyttää origin
+git push -u origin master //tällä pusketaan sun koneelta sinne githubiin etärepolle
+-> sit voi lataa chrome sivu uusiks ja pitäis olla sun paikallistiedostot nyt githubissa myös
+touch README.md
+git add .
+git commit -m 'lisätty readme'
+git push //PUSHilla aina pusketaan tiedostot paikallistiedostoista etärepolle kuten githubiin
+git pull //käytetään jos projektissa joku muu on tehnyt muutoksia, jolla saat uusimmat muiden tekemät commitit itsellesi
